@@ -4,15 +4,19 @@
 		<meta charset="utf-8" />
 		<title>Korean Cheat Sheet</title>
 		<style>
+			body {background-color: #ebedee; }
 			:target { background: lightgreen;}
 			h1 {margin-top: 0.5em; margin-bottom: 0.5em; }
 			text {
 				font-size: 12px;
 				font-family: Verdana, Helvetica, Arial;
 			}
+			
+			.group, .column { max-width: 15em; display: inline-block; }
+			.column .group {width: 100%; }
 			.group {
-				max-width: 15em; 
-				display: inline-block; 
+				background-color: white;
+				
 				vertical-align: top; 
 				border: solid grey 1px; 
 				border-radius: 8px;
@@ -231,25 +235,6 @@
 		</section>
 
 		<section class="group">
-			<h1>Time related</h1>
-			<section class="rule">
-				<h1>Before</h1>
-				<p class="topic">-기 전에</p>
-				<p class="example">사과를 먹<span class="topic">기 전에</span> 샀어요.</p>
-			</section>
-
-			<section class="rule">
-				<h1>After</h1>
-				<p class="topic">-(으)ㄴ 후에</p>
-				<p class="example">사과를 <span class="topic">산 후에</span> 먹을 거예요.</p>
-				<p class="exception"><a href="#exceptionRule2">exception rule 2</a></p>
-
-				<p class="topic">-고 <span class="comment">short of 그리고</span></p>
-				<p class="example">사과를 사<span class="topic">고</span> 먹을 거예요.</p>
-			</section>
-		</section>
-
-		<section class="group">
 			<h1>From, To</h1>
 
 			<section class="rule">
@@ -332,28 +317,50 @@
 			</section>
 		</section>
 
-		<section class="group">
-			<h1>Ability</h1>
+		<div class="column">
+			<section class="group">
+				<h1>Ability</h1>
 
-			<section class="rule">
-				<h1>Can</h1>
-				<p class="topic">-(으)ㄹ 수 있다</p>
-				<p class="example">사과를 먹<span class="topic">을 수 있어요</span>.</p>
-				<p class="exception"><a href="#exceptionRule2">exception rule 2</a></p>
-			</section>
-			
-			<section class="rule">
-				<h1>Can't</h1>
-				<p class="topic">-(으)ㄹ 수 없다</p>
-				<p class="example">사과를 먹<span class="topic">을 수 없어요</span>.</p>
-				<p class="exception"><a href="#exceptionRule2">exception rule 2</a></p>
-				
-				<p class="topic">못</p>
-				<p class="example">사과를 <span class="topic">못</span> 먹어요.</p>
-				
-			</section>
-		</section>
+				<section class="rule">
+					<h1>Can</h1>
+					<p class="topic">-(으)ㄹ 수 있다</p>
+					<p class="example">사과를 먹<span class="topic">을 수 있어요</span>.</p>
+					<p class="exception"><a href="#exceptionRule2">exception rule 2</a></p>
+				</section>
 
+				<section class="rule">
+					<h1>Can't</h1>
+					<p class="topic">-(으)ㄹ 수 없다</p>
+					<p class="example">사과를 먹<span class="topic">을 수 없어요</span>.</p>
+					<p class="exception"><a href="#exceptionRule2">exception rule 2</a></p>
+
+					<p class="topic">못</p>
+					<p class="example">사과를 <span class="topic">못</span> 먹어요.</p>
+
+				</section>
+			</section>
+
+
+			<section class="group">
+				<h1>Time related</h1>
+				<section class="rule">
+					<h1>Before</h1>
+					<p class="topic">-기 전에</p>
+					<p class="example">사과를 먹<span class="topic">기 전에</span> 샀어요.</p>
+				</section>
+
+				<section class="rule">
+					<h1>After</h1>
+					<p class="topic">-(으)ㄴ 후에</p>
+					<p class="example">사과를 <span class="topic">산 후에</span> 먹을 거예요.</p>
+					<p class="exception"><a href="#exceptionRule2">exception rule 2</a></p>
+
+					<p class="topic">-고 <span class="comment">short of 그리고</span></p>
+					<p class="example">사과를 사<span class="topic">고</span> 먹을 거예요.</p>
+				</section>
+			</section>
+		</div>
+		
 		<section class="group">
 			<h1>Exceptions</h1>
 			<section class="rule">
