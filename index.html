@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Korean Cheat Sheet</title>
+		<style>
+			:target { background: lightgreen;}
+			h1 {margin-top: 0.5em; margin-bottom: 0.5em; }
+			text {
+				font-size: 12px;
+				font-family: Verdana, Helvetica, Arial;
+			}
+			.group {
+				max-width: 15em; 
+				display: inline-block; 
+				vertical-align: top; 
+				border: solid grey 1px; 
+				border-radius: 8px;
+			}
+			.rule {border-top: solid lightgrey 1px; }
+			.topic { color: orange; stroke: orange; }
+			.exception { color: darkred; }
+			.exception:before {content: '⚠ '; }
+			.comment {color: grey; font-size: 0.8em;}
+			.example, .exception { margin-left: 1em; margin-top: 0.5em; margin-bottom: 0.5em; }
+		</style>
+	</head>
+	<body>
+		<section class="group">
+			<h1>Basics</h1>
+			<section class="rule">
+				<h1>요</h1>
+				<svg width="200" height="140" xmlns="http://www.w3.org/2000/svg">
+					<text y="72" x="0">받침</text>
+					<text y="50" x="12">no</text>
+					<text y="95" x="7">yes</text>
+					<text y="21" x="47">others</text>
+					<text y="57" x="47">ㅡ⇨X*</text>
+					<text y="91" x="47">ㄷ⇨ㄹ</text>
+					<text y="104" x="47">ㅂ⇨우</text>
+					<text y="125" x="47">others</text>
+					<text y="16" x="113">ㅗ</text>
+					<text y="31" x="113">ㅜ</text>
+					<text y="47" x="113">ㅣ</text>
+					<text y="64" x="110">others</text>
+					<text y="85" x="104">ㅏㅑㅗㅛ</text>
+					<text y="125" x="102">ㅓㅕㅜㅠㅡl</text>
+					<text class="topic" y="15" x="162">ㅘ요</text>
+					<text class="topic" y="35" x="162">ㅝ요</text>
+					<text class="topic" y="55" x="162">ㅕ요</text>
+					<text class="topic" y="75" x="173">요</text>
+					<text class="topic" y="95" x="162">아요</text>
+					<text class="topic" y="115" x="162">어요</text>
+
+					<path d="m22,70l8,-30" stroke="#000" fill="none"/>
+					<path d="m22,70l8,30" stroke="#000" fill="none"/>
+					
+					<path d="m30,40s35,-35 70,0" stroke="#000" fill="none"/>
+					<path d="m30,40s6,11 15,13" stroke="#000" fill="none"/>
+					<path d="m85,53s14,6 15,46" stroke="#000" fill="none"/>
+
+					<path d="m100,40s1,-28 60,-28" stroke="#000" fill="none"/>
+					<path d="m100,40s1,-8 60,-8" stroke="#000" fill="none"/>
+					<path d="m100,40s1,12 60,12" stroke="#000" fill="none"/>
+					<path d="m100,40s1,36 60,32" stroke="#000" fill="none"/>
+
+					<path d="m30,100s6,-11 15,-13" stroke="#000" fill="none"/>
+					<path d="m30,100l0,0 15,0" stroke="#000" fill="none"/>
+					<path d="m85,100l0,0 15,0" stroke="#000" fill="none"/>
+					<path d="m30,100s35,35 70,0" stroke="#000" fill="none"/>
+
+					<path d="m100,100s-7,-11 -18,-13" stroke="#000" fill="none"/>
+					<path d="m100,100s16,-12 60,-11" stroke="#000" fill="none"/>
+					<path d="m100,100s17,12 60,11" stroke="#000" fill="none"/>
+				</svg>
+				<p class="exception">하다 ⇨ 해요</p>
+				<p class="exception">vowel + 이다 ⇨ -예요</p>
+				<p class="exception">consonant + 이다 ⇨ -이에요</p>
+				<p class="exception">* delete and use previous vowel (or ㅓ if none) to decide</p>
+				<p class="exception">see also exceptions of <a href="#exceptionRule1">exception rule 1</a></p>
+			</section>
+
+			<section class="rule">
+				<h1>Negative</h1>
+				<p class="topic">안</p>
+				<p class="example">사과를 <span class="topic">안</span> 먹어요.</p>
+
+				<p class="topic">-지 않다</p>
+				<p class="example">사과를 먹<span class="topic">지 않아요.</span></p>
+			</section>
+
+			<section class="rule">
+				<h1>Future</h1>
+				<p class="topic">-(으)ㄹ 거예요</p>
+				<p class="example">사과를 먹<span class="topic">을 거예요.</span></p>
+				<p class="exception"><a href="#exceptionRule2">exception rule 2</a></p>
+			</section>
+
+			<section class="rule">
+				<h1>Doing</h1>
+				<p class="topic">-고 있다</p>
+				<p class="example">사과를 먹<span class="topic">고 있어요.</span></p>
+			</section>
+		</section>
+
+		<section class="group">
+			<h1>Want / Plan to</h1>
+
+			<section class="rule">
+				<h1>Want to</h1>
+				<p class="topic">-고 싶다</p>
+				<p class="example">사과를 먹<span class="topic">고 싶어요</span>.</p>
+			</section>
+
+			<section class="rule">
+				<h1>Intent to</h1>
+				<p class="topic">-(으)려고 하다</p>
+				<p class="example">사과를 먹<span class="topic">으려고 해요</span>.</p>
+				<p class="exception"><a href="#exceptionRule3">exception rule 3</a></p>
+			</section>
+
+			<section class="rule">
+				<h1>Promise to</h1>
+				<p class="topic">-(으)ㄹ게요</p>
+				<p class="example">사과를 먹<span class="topic">을게요</span>.</p>
+				<p class="exception"><a href="#exceptionRule2">exception rule 2</a></p>
+			</section>
+
+			<section class="rule">
+				<h1>Let's do?</h1>
+				<p class="topic">-(으)ㄹ 까요</p>
+				<p class="example">사과를 먹<span class="topic">을 까요</span>?</p>
+				<p class="exception"><a href="#exceptionRule2">exception rule 2</a></p>
+			</section>
+
+			<section class="rule">
+				<h1>Let's do!</h1>
+				<p class="topic">-(으)ㅂ 시다</p>
+				<p class="example">사과를 먹<span class="topic">읍 시다</span>!</p>
+				<p class="exception"><a href="#exceptionRule2">exception rule 2</a></p>
+			</section>
+
+			<section class="rule">
+				<h1>Let's not do!</h1>
+				<p class="topic">-지  맙시다</p>
+				<p class="example">사과를 먹<span class="topic">지 맙시다</span>!</p>
+			</section>
+		</section>
+
+		<section class="group">
+			<h1>Explanations</h1>
+
+			<section class="rule">
+				<h1>Description</h1>
+				<p class="topic">-(으)ㄴ</p>
+				<p class="example"><span class="topic">비싼</span> 사과예요.</p>
+				<p class="exception">있다 ⇨ 있는</p>
+				<p class="exception">없다 ⇨ 없는</p>
+				<p class="exception"><a href="#exceptionRule2">exception rule 2</a></p>
+			</section>
+
+			<section class="rule">
+				<h1>Guess it is</h1>
+				<p class="topic">-겠-</p>
+				<p class="example">재미있<span class="topic">겠</span>어요.</p>
+				<p class="example">재미있었<span class="topic">겠</span>어요.</p>
+			</section>
+			
+			<section class="rule">
+				<h1>X is more than Y</h1>
+				<p class="topic">Y-보다</p>
+				<p class="example">사과를 바나나<span class="topic">보다</span> 좋아해요.</p>
+			</section>
+			
+			<section class="rule">
+				<h1>Go to X to do Y</h1>
+				<p class="topic">Y-(으)러 가다/오다/다니다</p>
+				<p class="example">사과를 먹<span class="topic">으러</span> 집에 <span class="topic">가요</span>.</p>
+				<p class="exception"><a href="#exceptionRule3">exception rule 3</a></p>
+			</section>
+
+			<section class="rule">
+				<h1>Do X because Y</h1>
+				<p class="topic">Y-아서/-어서</p>
+				<p class="example">배고<span class="topic">파서</span> 사과를 먹어요.</p>
+				<p class="exception">Y is always present</p>
+				<p class="exception">하다 ⇨ 해서</p>
+				<p class="exception">vowel + 이다 ⇨ -여서 or -라서</p>
+				<p class="exception">consonant + 이다 ⇨ -이어서 or -이라서</p>
+			</section>
+		</section>
+
+		<section class="group">
+			<h1>Imperatives</h1>
+
+			<section class="rule">
+				<h1>Please / Do smth for so</h1>
+				<p class="topic">-아/어 주다</p>
+				<p class="example">사과를 사<span class="topic"> 주세요</span>.</p>
+				<p class="example">사과를 찾<span class="topic">아 주세요</span>.</p>
+				<p class="example">여자<span class="topic">를 위해서</span> 사과를 사<span class="topic"> 주세요</span>.</p>
+				<p class="exception"><a href="#exceptionRule4">exception polite verbs</a></p>
+			</section>
+
+			<section class="rule">
+				<h1>Do</h1>
+				<p class="topic">-(으)세요</p>
+				<p class="example">사과를 사<span class="topic">세요</span>.</p>
+			</section>
+
+			<section class="rule">
+				<h1>Don't</h1>
+				<p class="topic">-지 마세요</p>
+				<p class="example">사과를 사<span class="topic">지 마세요</span>.</p>
+			</section>
+
+			<section class="rule">
+				<h1>Do (polite)</h1>
+				<p class="topic">-(으)십시요</p>
+				<p class="example">사과를 사<span class="topic">십시요</span>.</p>
+				<p class="exception"><a href="#exceptionRule4">exception polite verbs</a></p>
+			</section>
+
+			<section class="rule">
+				<h1>Don't (polite)</h1>
+				<p class="topic">-지 마십시요</p>
+				<p class="example">사과를 사<span class="topic">지 마십시요</span>.</p>
+				<p class="exception"><a href="#exceptionRule4">exception polite verbs</a></p>
+
+			</section>
+		</section>
+
+		<section class="group">
+			<h1>Time related</h1>
+			<section class="rule">
+				<h1>Before</h1>
+				<p class="topic">-기 전에</p>
+				<p class="example">사과를 먹<span class="topic">기 전에</span> 샀어요.</p>
+			</section>
+
+			<section class="rule">
+				<h1>After</h1>
+				<p class="topic">-(으)ㄴ 후에</p>
+				<p class="example">사과를 <span class="topic">산 후에</span> 먹을 거예요.</p>
+				<p class="exception"><a href="#exceptionRule2">exception rule 2</a></p>
+
+				<p class="topic">-고 <span class="comment">short of 그리고</span></p>
+				<p class="example">사과를 사<span class="topic">고</span> 먹을 거예요.</p>
+			</section>
+		</section>
+
+		<section class="group">
+			<h1>From, To</h1>
+
+			<section class="rule">
+				<h1>Person</h1>
+				<p class="topic">-에게서 or -한테서</p>
+				<p class="example">친구<span class="topic">에게서</span> 편지를 받아요.</p>
+
+				<p class="topic">-에게 or -한테</p>
+				<p class="example">친구<span class="topic">에게</span> 전화해요.</p>
+			</section>
+
+			<section class="rule">
+				<h1>Place</h1>
+				<p class="topic">-에서</p>
+				<p class="example">집<span class="topic">에서</span> 와요.</p>
+
+				<p class="topic">-까지</p>
+				<p class="example">학교<span class="topic">까지</span> 가요.</p>
+			</section>
+
+			<section class="rule">
+				<h1>Time</h1>
+				<p class="topic">-부터</p>
+				<p class="example">아침<span class="topic">부터</span> 비가 와요.</p>
+
+				<p class="topic">-까지</p>
+				<p class="example">저녁<span class="topic">까지</span> 비가 와요.</p>
+			</section>
+
+		</section>
+
+		<section class="group">
+			<h1>Miscellaneous</h1>
+
+			<section class="rule">
+				<h1>If</h1>
+				<p class="topic">-(으)면</p>
+				<p class="example">사과가 있<span class="topic">으면</span> 먹어요.</p>
+				<p class="exception"><a href="#exceptionRule3">exception rule 3</a></p>
+			</section>
+
+			<section class="rule">
+				<h1>Or</h1>
+				<p class="topic">N-(이)나</p>
+				<p class="example">사과<span class="topic">나</span> 바나나를 먹어요.</p>
+				
+				<p class="topic">V-거나</p>
+				<p class="example">사과를 주<span class="topic">거나</span> 먹어요.</p>
+			</section>
+
+			<section class="rule">
+				<h1>And / With</h1>
+				<p class="topic">N-하고</p>
+				<p class="example">사과<span class="topic">하고</span> 바나나를 먹어요.</p>
+			</section>
+
+			<section class="rule">
+				<h1>By / In (means)</h1>
+				<p class="topic">-(으)로</p>
+				<p class="example">버스<span class="topic">로</span> 가요.</p>
+				<p class="example">한국어<span class="topic">로</span> 말해요.</p>
+				<p class="exception"><a href="#exceptionRule3">exception rule 3</a></p>
+			</section>
+
+			<section class="rule">
+				<h1>Via</h1>
+				<p class="topic">-(으)로 에서</p>
+				<p class="example">서울에서 도쿄<span class="topic">로 해서</span> 파리까지 가요.</p>
+			</section>
+
+			<section class="rule">
+				<h1>Isn't it?</h1>
+				<p class="topic">-지요? <span class="comment">pronouced "죠"</span></p>
+				<p class="example">사과를 먹었<span class="topic">지요?</span></p>
+				<p class="example">사과를 먹<span class="topic">지요?</span></p>
+				<p class="example">사과를 먹을 거<span class="topic">지요?</span></p>
+				<p class="exception">vowel + 이다 ⇨ -지요?</p>
+				<p class="exception">consonant + 이다 ⇨ -이지요?</p>
+				
+			</section>
+		</section>
+
+		<section class="group">
+			<h1>Ability</h1>
+
+			<section class="rule">
+				<h1>Can</h1>
+				<p class="topic">-(으)ㄹ 수 있다</p>
+				<p class="example">사과를 먹<span class="topic">을 수 있어요</span>.</p>
+				<p class="exception"><a href="#exceptionRule2">exception rule 2</a></p>
+			</section>
+			
+			<section class="rule">
+				<h1>Can't</h1>
+				<p class="topic">-(으)ㄹ 수 없다</p>
+				<p class="example">사과를 먹<span class="topic">을 수 없어요</span>.</p>
+				<p class="exception"><a href="#exceptionRule2">exception rule 2</a></p>
+				
+				<p class="topic">못</p>
+				<p class="example">사과를 <span class="topic">못</span> 먹어요.</p>
+				
+			</section>
+		</section>
+
+		<section class="group">
+			<h1>Exceptions</h1>
+			<section class="rule">
+				<h1 id="exceptionRule1">Rule 1</h1>
+				<p class="topic">ㄷ ⇨ ㄹ</p>
+				<p class="example">듣다 ⇨ 들…</p>
+				<p class="exception">닫다 ⇨ 닫아요</p>
+				<p class="exception">받다 ⇨ 받아요</p>
+				<p class="exception">믿다 ⇨ 믿어요</p>
+
+				<p class="topic">ㅂ ⇨ 우</p>
+				<p class="example">돕다 ⇨ 도우…</p>
+				<p class="exception">돕다 ⇨ 도와요</p>
+			</section>
+
+			<section class="rule">
+				<h1 id="exceptionRule2">Rule 2</h1>
+				<p>Same as <a href="#exceptionRule1">exception rule 1</a>, and:</p>
+
+				<p class="topic">ㄹ ⇨ delete, but use as if vowel, not consonant</p>
+				<p class="example">살다 ⇨ 삽시다</p>
+			</section>
+
+			<section class="rule">
+				<h1 id="exceptionRule3">Rule 3</h1>
+				<p>Same as <a href="#exceptionRule1">exception rule 1</a>, and:</p>
+				<p class="topic">ㄹ ⇨ ㄹ, but use as if vowel, not consonant</p>
+				<p class="example">살다 ⇨ 살면</p>
+			</section>
+
+			<section class="rule">
+				<h1 id="exceptionRule4">Polite verbs</h1>
+				<p class="topic">먹다 ⇨ 드시다</p>
+				<p class="topic">마시다 ⇨ 드시다</p>
+				<p class="topic">자다 ⇨ 주무시다</p>
+				<p class="topic">말하다 ⇨ 말씀하시다</p>
+				<p class="topic">주다 ⇨ 드리다</p>
+			</section>
+
+		</section>
+
+
+	</body>
+</html>
