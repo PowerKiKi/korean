@@ -49,7 +49,7 @@
 헤어지다	to break up
 도둑이 들다	to be robbed
 틀리다	to be wrong
-짲증이 나다	to be irritated
+짜증이 나다	to be irritated
 가장	most
 교통 카드	transportation card
 장점	advantage
@@ -80,7 +80,7 @@ PC방	PC room
 쓰레기통	trash can
 쓰레기봉투	trash bag
 따로	separately
-오제든지	whenever
+언제든지	whenever
 추신	P.S.
 원하다	to want
 연락하다	to contact smb

@@ -1,5 +1,5 @@
-배트남	Vietnam
-네더란드	The Netherlands
+베트남	Vietnam
+네덜란드	The Netherlands
 이집트	Egypt
 되다	to become
 개월	month
@@ -27,7 +27,6 @@
 연날리기	kite flying
 유명	famous
 글	text
-생기다	to appear ?
 소문	rumor
 특별하다	to be special
 행동	action
@@ -60,7 +59,7 @@
 모이다	to gather
 매주	weekly
 주로	mainly
-유행하다	to be popular
+유명하다	to be popular
 가곡	song
 정보	information
 러시아	Russia
