@@ -47,9 +47,9 @@
 국자	ladle
 강아지	puppy
 털	fur
-벗다	take off (regular verb)
-씻다	wash hand (regular verb)
-웃다	laugh (regular verb)
+벗다	to take off (regular verb)
+씻다	to wash hand (regular verb)
+웃다	to laugh (regular verb)
 곧	soon
 라면	ramen
 개란찜	steamed egg
