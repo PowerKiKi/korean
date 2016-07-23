@@ -1,0 +1,16 @@
+<div class="searchBox">
+    <input [(ngModel)]="term" placeholder="search" autofocus />
+    <span class="count">{{ruleCount(data | search: term)}}</span>
+    <small><a href="/about.html">about</a></small>
+</div>
+
+<section class="group" *ngFor="let group of data | search: term">
+    <h1>{{group.title}}</h1>
+    <section class="rule" *ngFor="let rule of group.rules">
+        <h1>{{rule.title}}</h1>
+        <div [innerHTML]="rule.content"></div>
+        <div class="tags" *ngFor="let tag of rule.tags">
+            <span class="tag">{{tag}}</span>
+        </div>
+    </section>
+</section>
