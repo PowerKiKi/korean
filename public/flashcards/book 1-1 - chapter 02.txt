@@ -1,0 +1,37 @@
+한국어 책	korean language book
+선생님	teacher
+네	yes
+사전	dictionary
+한국 사람	Korean
+학생	student
+미국 사람	American
+회사원	office worker
+일본 사람	Japanese
+은행원	bank employee
+프랑스 사람	Frenchman
+영화배우	actor
+러시아 사람	Russian
+주부	housewife
+몽골 사람	Mongolian
+요리사	cook
+후주 사람	Australian
+의사	doctor
+캐나다 사람	Canadian
+아니요	no
+가수	singer
+태국 사람	Thai
+배트남 사람	Vietnamese
+영국 사람	British
+전화번호	phone number
+무엇	what
+반갑다	to be glad
+사무실	office
+층	floor
+호	(room) number
+이름	name
+직업	job
+이메일	email
+주소	address
+재미교포	Korean-American
+영어	English
+누구	who
