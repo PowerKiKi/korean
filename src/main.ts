@@ -1,10 +1,12 @@
-import { bootstrap } from '@angular/platform-browser-dynamic';
+import './polyfills.ts';
+
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
-import { KoreanAppComponent, environment } from './app/';
-import { DataService } from './app/data.service';
+import { environment } from './environments/environment';
+import { AppModule } from './app/';
 
 if (environment.production) {
   enableProdMode();
 }
 
-bootstrap(KoreanAppComponent, [DataService]);
+platformBrowserDynamic().bootstrapModule(AppModule);

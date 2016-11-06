@@ -3,13 +3,12 @@ import {Search} from './search.pipe';
 import {DataService} from './data.service';
 
 @Component({
-  moduleId: module.id,
-  selector: 'korean-app',
-  templateUrl: 'korean.component.html',
-  styleUrls: ['korean.component.css'],
-  pipes: [Search],
+  // moduleId: module.id,
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
 })
-export class KoreanAppComponent {
+export class AppComponent {
   title = 'Korean';
   public data;
   public term: string = '';

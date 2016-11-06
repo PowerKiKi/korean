@@ -1,3 +1,2 @@
-export * from './environment';
-export * from './korean.component';
-export * from './data.service';
+export * from './app.component';
+export * from './app.module';
