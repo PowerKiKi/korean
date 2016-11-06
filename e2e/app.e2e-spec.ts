@@ -7,8 +7,8 @@ describe('korean App', function() {
     page = new KoreanPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display basics card', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Basics');
   });
 });
