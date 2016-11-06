@@ -1,3 +1,4 @@
+/* tslint:disable:max-line-length */
 import { Injectable } from '@angular/core';
 
 interface Group {
