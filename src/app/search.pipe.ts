@@ -1,8 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-
-// import {AppData} from './app.data' ??????????????
-
 @Pipe({
   name: 'search'
 })
@@ -45,7 +42,7 @@ export class Search implements PipeTransform {
     return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
   }
 
-  private getRegExps(terms: string): string[] {
+  private getRegExps(terms: string): RegExp[] {
       let splitTerms;
       if (!terms) {
           splitTerms = [];
@@ -61,13 +58,13 @@ export class Search implements PipeTransform {
       return result;
   }
 
-  private matchRule(terms: string[], o) {
+  private matchRule(terms: RegExp[], o) {
 
       let match = true;
       for (let term of terms) {
           let termMatch = o.title.match(term);
           if (o.content) {
-              termMatch = termMatch || o.content.match(term);
+              termMatch = termMatch || o.content.toString().match(term);
           }
 
           match = match && termMatch;
