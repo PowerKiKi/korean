@@ -8,16 +8,16 @@ import { DataService } from './data.service';
 import { Search } from './search.pipe';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    Search
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
-  providers: [DataService],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        Search
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpModule
+    ],
+    providers: [DataService],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
