@@ -9,7 +9,7 @@ import { DataService } from './data.service';
 export class AppComponent {
     title = 'Korean';
     public data;
-    public term: string = '';
+    public term = '';
 
     constructor(dataService: DataService) {
         this.data = dataService.data;
@@ -17,12 +17,11 @@ export class AppComponent {
 
     public ruleCount(groups) {
 
-        let groupCount = groups.length;
         let ruleCount = 0;
-        for (let group of groups) {
+        for (const group of groups) {
             ruleCount += group.rules.length;
         }
 
-        return ruleCount + ' rules in ' + groupCount + ' groups';
+        return ruleCount + ' rules in ' + groups.length + ' groups';
     }
 }
