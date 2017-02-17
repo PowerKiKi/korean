@@ -1,4 +1,3 @@
-korean
-======
+# Korean
 
-collection of resources for learning Korean
+Collection of resources for learning Korean
