@@ -1,13 +1,13 @@
-import { KoreanPage } from './app.po';
+import { AppPage } from './app.po';
 
 describe('korean App', () => {
-  let page: KoreanPage;
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new KoreanPage();
+    page = new AppPage();
   });
 
-  it('should display basics card', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
     expect(page.getParagraphText()).toEqual('Basics');
   });

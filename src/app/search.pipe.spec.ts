@@ -1,7 +1,7 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async, inject } from '@angular/core/testing';
-import { Search } from './search.pipe';
+import { SearchPipe } from './search.pipe';
 import { DataService } from '../app/data.service';
 
 describe('Search Pipe', () => {
@@ -12,7 +12,7 @@ describe('Search Pipe', () => {
         });
     });
 
-    const pipe = new Search();
+    const pipe = new SearchPipe();
 
     it('should return empty array if not found', inject([DataService], (dataService: DataService) => {
         const actual = pipe.transform(dataService.data, 'nonexistingstring');

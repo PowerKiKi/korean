@@ -3,7 +3,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({
     name: 'search'
 })
-export class Search implements PipeTransform {
+export class SearchPipe implements PipeTransform {
 
     transform(groups: any, rawTerms: string): any {
         const terms = this.getRegExps(rawTerms);

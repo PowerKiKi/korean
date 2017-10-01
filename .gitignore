@@ -3,14 +3,13 @@
 # compiled output
 /dist
 /tmp
+/out-tsc
 
 # dependencies
 /node_modules
-/bower_components
 
 # IDEs and editors
 /.idea
-/.vscode
 .project
 .classpath
 *.launch
@@ -19,7 +18,7 @@
 # misc
 /.sass-cache
 /connect.lock
-/coverage/*
+/coverage
 /libpeerconnection.log
 npm-debug.log
 testem.log

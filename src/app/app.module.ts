@@ -5,12 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { DataService } from './data.service';
-import { Search } from './search.pipe';
+import { SearchPipe } from './search.pipe';
 
 @NgModule({
     declarations: [
         AppComponent,
-        Search
+        SearchPipe
     ],
     imports: [
         BrowserModule,

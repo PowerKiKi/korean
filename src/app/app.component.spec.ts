@@ -3,7 +3,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { Search } from './search.pipe';
+import { SearchPipe } from './search.pipe';
 import { DataService } from './data.service';
 
 describe('App: Korean', () => {
@@ -11,7 +11,7 @@ describe('App: Korean', () => {
         TestBed.configureTestingModule({
             declarations: [
                 AppComponent,
-                Search
+                SearchPipe
             ],
             providers: [DataService],
             imports: [
