@@ -1,0 +1,22 @@
+설거지	dishwashing
+치과	Dentist
+스트레스	Stress
+집들이	Housewarming party
+주사	Injection
+기분	Mood
+통화하다	Talk over the phone
+이사하다	To move out
+과로하다	To overwork
+맞다	To get injection
+참다	To endure
+떠나다	To leave
+화장하다	To make up
+가져오다	To bring
+똑같다	Same
+약하다	Weak
+괴롭다	Painful
+깜빡	Carelessly
+늦게	Late
+깜빡 잊어버리다	To forget carelessly
+밥하다	To cook
+스트레스를 받다	To get stressed

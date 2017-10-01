@@ -147,7 +147,8 @@ export class DataService {
                     {
                         title: `Let's do!`,
                         tags: [
-                            `Ewha 1-2`
+                            `Ewha 1-2`,
+                            `Active Korean 4`
                         ],
                         content: `<p class="topic">-(으)ㅂ시다</p>
                         <p class="example">사과를 먹<span class="topic">읍시다</span>!</p>
@@ -192,7 +193,8 @@ export class DataService {
                     {
                         title: `Promise to`,
                         tags: [
-                            `Ewha 2-1`
+                            `Ewha 2-1`,
+                            `Active Korean 4`
                         ],
                         content: `<p class="topic">V-기로 하다</p>
                         <p class="example">내일 친구를 만나<span class="topic">기로 했어요</span>.</p>`
@@ -280,7 +282,8 @@ export class DataService {
                     {
                         title: `Doing`,
                         tags: [
-                            `Ewha 2-1`
+                            `Ewha 2-1`,
+                            `Active Korean 4`
                         ],
                         content: `<p class="topic">V-는 중 이다/에</p>
                         <p class="example">사과를 먹<span class="topic">는 중이에요</span>.</p>
@@ -729,7 +732,8 @@ export class DataService {
                     {
                         title: `Before`,
                         tags: [
-                            `Ewha 1-2`
+                            `Ewha 1-2`,
+                            `Active Korean 4`
                         ],
                         content: `<p class="topic">-기 전에</p>
                             <p class="example">사과를 먹<span class="topic">기 전에</span> 샀어요.</p>`
@@ -737,7 +741,8 @@ export class DataService {
                     {
                         title: `After`,
                         tags: [
-                            `Ewha 1-2`
+                            `Ewha 1-2`,
+                            `Active Korean 4`
                         ],
                         content: `<p class="topic">-(으)ㄴ 후에</p>
                             <p class="example">사과를 <span class="topic">산 후에</span> 먹을 거예요.</p>
