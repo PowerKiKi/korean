@@ -140,7 +140,7 @@ export class DataService {
                         tags: [
                             `Ewha 1-2`
                         ],
-                        content: `<p class="topic">-(으)ㄹ 까요</p>
+                        content: `<p class="topic">V-(으)ㄹ 까요</p>
                         <p class="example">사과를 먹<span class="topic">을 까요</span>?</p>
                         <p class="exception"><a href="#exceptionRule2">exception rule 2</a></p>`
                     },
@@ -150,7 +150,7 @@ export class DataService {
                             `Ewha 1-2`,
                             `Active Korean 4`
                         ],
-                        content: `<p class="topic">-(으)ㅂ시다</p>
+                        content: `<p class="topic">V-(으)ㅂ시다</p>
                         <p class="example">사과를 먹<span class="topic">읍시다</span>!</p>
                         <p class="exception"><a href="#exceptionRule2">exception rule 2</a></p>`
                     },
@@ -159,7 +159,7 @@ export class DataService {
                         tags: [
                             `Ewha 1-2`
                         ],
-                        content: `<p class="topic">-지  맙시다</p>
+                        content: `<p class="topic">V-지 맙시다</p>
                         <p class="example">사과를 먹<span class="topic">지 맙시다</span>!</p>`
                     },
                     {
@@ -221,7 +221,8 @@ export class DataService {
                     {
                         title: `If want X do Y`,
                         tags: [
-                            `Ewha 2-1`
+                            `Ewha 2-1`,
+                            `Active Korean 4`
                         ],
                         content: `<p class="topic">V-(으)려면</p>
                         <p class="example">사과를 먹<span class="topic">으려면</span> 사야 해요.</p>
@@ -285,7 +286,10 @@ export class DataService {
                             `Ewha 2-1`,
                             `Active Korean 4`
                         ],
-                        content: `<p class="topic">V-는 중 이다/에</p>
+                        content: `<p class="topic">N 중 이다/에</p>
+                        <p class="example">공사 <span class="topic"> 중이에요</span>.</p>
+
+                        <p class="topic">V-는 중 이다/에</p>
                         <p class="example">사과를 먹<span class="topic">는 중이에요</span>.</p>
                         <p class="exception"><a href="#exceptionRule2">exception rule 2</a></p>`
                     },
@@ -456,7 +460,8 @@ export class DataService {
                     {
                         title: `Because`,
                         tags: [
-                            `Ewha 2-1`
+                            `Ewha 2-1`,
+                            `Active Korean 4`
                         ],
                         content: `<p class="topic">N 때문에</p>
                         <p class="example">시험 <span class="topic">때문에</span> 공부해요.</p>
@@ -469,7 +474,8 @@ export class DataService {
                     {
                         title: `Because`,
                         tags: [
-                            `Ewha 2-1`
+                            `Ewha 2-1`,
+                            `Active Korean 4`
                         ],
                         content: `<p class="topic">A/V-거든요</p>
                         <p class="example">사과를 먹어요. 배고프<span class="topic">거든요</span>.</p>`
@@ -515,7 +521,7 @@ export class DataService {
                         tags: [
                             `Ewha 1-2`
                         ],
-                        content: `<p class="topic">-(으)세요</p>
+                        content: `<p class="topic">V-(으)세요</p>
                         <p class="example">사과를 사<span class="topic">세요</span>.</p>`
                     },
                     {
@@ -572,7 +578,8 @@ export class DataService {
                     {
                         title: `Or`,
                         tags: [
-                            `Ewha 1-2`
+                            `Ewha 1-2`,
+                            `Active Korean 4`
                         ],
                         content: `<p class="topic">N-(이)나</p>
                         <p class="example">사과<span class="topic">나</span> 바나나를 먹어요.</p>
@@ -662,6 +669,14 @@ export class DataService {
                         <p class="example">먹<span class="topic">을 건가요</span>?</p>`
                     },
                     {
+                        title: `Hope/Request`,
+                        tags: [
+                            `Active Korean 4`
+                        ],
+                        content: `<p class="topic">V-기 바랍니다</p>
+                        <p class="example">와 주시<span class="topic">기 바랍니다</span>.</p>`
+                    },
+                    {
                         title: `And (with connections)`,
                         tags: [
                             `Ewha 2-1`
@@ -723,6 +738,14 @@ export class DataService {
                         content: `<p class="topic">-(으)면 안 되다</p>
                         <p class="example">사과를 먹<span class="topic">으면 안 되요</span>.</p>
                         <p class="exception"><a href="#exceptionRule3">exception rule 3</a></p>`
+                    },
+                    {
+                        title: `Didn't know it is X`,
+                        tags: [
+                            `Active Korean 4`
+                        ],
+                        content: `<p class="topic">A/V-(으)ㄹ 줄 몰랐다</p>
+                        <p class="example">사과가 비<span class="topic">쌀 줄 몰랐어요</span>.</p>`
                     }
                 ]
             },
@@ -807,6 +830,14 @@ export class DataService {
                         <p class="topic">V-는 동안(에)</p>
                         <p class="example">영화를 보<span class="topic">는 동안</span> 사과를 먹어요.</p>
                         <p class="exception">ㄹ ⇨ delete</p>`
+                    },
+                    {
+                        title: `Should have done X`,
+                        tags: [
+                            `Active Korean 4`
+                        ],
+                        content: `<p class="topic">V-았/었어야 됐는데</p>
+                        <p class="example">사과를 먹<span class="topic">었어야 됐는데</span>...</p>`
                     }
                 ]
             },
@@ -847,7 +878,7 @@ export class DataService {
                         content: `<p class="topic">V-(으)라고 하다</p>
                         <p class="example">사과를 먹<span class="topic">으라고 했어요</span>.</p>
 
-                        <p class="comment">original: -(으)세요</p>
+                        <p class="comment">original: V-(으)세요</p>
                         <p class="exception"><a href="#exceptionRule3">exception rule 3</a></p>
                         <p class="exception">주다: if original speaker ask for himself, change: 저를 도와주세요 ⇨ 도와달라고 했어요</p>`
                     },
@@ -859,7 +890,7 @@ export class DataService {
                         content: `<p class="topic">V-자고 하다</p>
                         <p class="example">사과를 먹<span class="topic">자고 했어요</span>.</p>
 
-                        <p class="comment">original: -(으)ㅂ시다</p>`
+                        <p class="comment">original: V-(으)ㅂ시다</p>`
                     }
                 ]
             },
@@ -872,12 +903,13 @@ export class DataService {
                             `Easy Korean 4`
                         ],
                         content: `<p class="topic">N/A/V-잖아요</p>
-                        <p class="example">아내가 예쁘<span class="topic">잖아요</span> 사과가 싸요.</p>`
+                        <p class="example">아내가 예쁘<span class="topic">잖아요</span>.</p>`
                     },
                     {
                         title: `Because did X, bad Y happened`,
                         tags: [
-                            `Easy Korean 4`
+                            `Easy Korean 4`,
+                            `Active Korean 4`
                         ],
                         content: `<p class="topic">V-느라고</p>
                         <p class="example">영화를 보<span class="topic">느라고</span>  피자가 탔어요.</p>`
@@ -896,6 +928,14 @@ export class DataService {
                         <p class="topic">V-(으)ㄹ 뿐(만) 아니라</p>
                         <p class="example">아내가 노래<span class="topic">할 뿐만 아니라</span> 춤도 춰요.</p>
                         <p class="exception"><a href="#exceptionRule3">exception rule 3</a></p>`
+                    },
+                    {
+                        title: `Even though do X, Y happens`,
+                        tags: [
+                            `Active Korean 4`
+                        ],
+                        content: `<p class="topic">아무리 V-아/어도</p>
+                        <p class="example"><span class="topic">아무리</span> 먹어<span class="topic">도</span> 배가 고파요.</p>`
                     }
                 ]
             },
