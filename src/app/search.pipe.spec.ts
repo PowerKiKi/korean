@@ -1,6 +1,4 @@
-/* tslint:disable:no-unused-variable */
-
-import { TestBed, async, inject } from '@angular/core/testing';
+import { inject, TestBed } from '@angular/core/testing';
 import { SearchPipe } from './search.pipe';
 import { DataService } from '../app/data.service';
 
@@ -8,7 +6,7 @@ describe('Search Pipe', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            providers: [DataService]
+            providers: [DataService],
         });
     });
 

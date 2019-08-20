@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-    name: 'search'
+    name: 'search',
 })
 export class SearchPipe implements PipeTransform {
 
@@ -16,7 +16,7 @@ export class SearchPipe implements PipeTransform {
         for (const group of groups) {
             const groupCopy = {
                 title: group.title,
-                rules: []
+                rules: [],
             };
 
             if (this.matchRule(terms, group)) {
