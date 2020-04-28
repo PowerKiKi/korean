@@ -31,6 +31,9 @@ text {
 
 .searchBox {
     margin: 1em;
+    & * {
+        margin-left: 1em;
+    }
 }
 .count {
     color: grey;
