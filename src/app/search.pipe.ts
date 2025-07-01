@@ -5,8 +5,8 @@ import type {Group, Rule} from './data.service';
     name: 'search',
 })
 export class SearchPipe implements PipeTransform {
-    transform(groups: Group[], rawTerms: string): Group[] {
-        const terms = this.getRegExps(rawTerms);
+    public transform(groups: Group[], rawTerms: string): Group[] {
+        const terms = this.#getRegExps(rawTerms);
 
         if (!terms.length) {
             return groups;
@@ -19,11 +19,11 @@ export class SearchPipe implements PipeTransform {
                 rules: [],
             };
 
-            if (this.matchRule(terms, group)) {
+            if (this.#matchRule(terms, group)) {
                 result.push(group);
             } else {
                 for (const rule of group.rules) {
-                    if (this.matchRule(terms, rule)) {
+                    if (this.#matchRule(terms, rule)) {
                         groupCopy.rules.push(rule);
                     }
                 }
@@ -38,11 +38,11 @@ export class SearchPipe implements PipeTransform {
     }
 
     // Escape user input to be treated as a literal string within a regular expression
-    private escapeRegExp(value: string): string {
+    #escapeRegExp(value: string): string {
         return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
     }
 
-    private getRegExps(terms: string): RegExp[] {
+    #getRegExps(terms: string): RegExp[] {
         let splitTerms: string[];
         if (!terms) {
             splitTerms = [];
@@ -52,13 +52,13 @@ export class SearchPipe implements PipeTransform {
 
         const result = [];
         for (const term of splitTerms) {
-            result.push(new RegExp(this.escapeRegExp(term), 'i'));
+            result.push(new RegExp(this.#escapeRegExp(term), 'i'));
         }
 
         return result;
     }
 
-    private matchRule(terms: RegExp[], o: Group | Rule): boolean {
+    #matchRule(terms: RegExp[], o: Group | Rule): boolean {
         let match = true;
         for (const term of terms) {
             let termMatch = !!o.title.match(term);

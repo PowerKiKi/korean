@@ -10,10 +10,10 @@ import {SearchPipe} from './search.pipe';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-    public readonly data = inject(DataService).data;
-    public term = '';
+    protected readonly data = inject(DataService).data;
+    protected term = '';
 
-    public ruleCount(groups: Group[]): string {
+    protected ruleCount(groups: Group[]): string {
         let ruleCount = 0;
         for (const group of groups) {
             ruleCount += group.rules.length;
