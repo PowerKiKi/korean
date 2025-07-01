@@ -1,11 +1,11 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import {Pipe, PipeTransform} from '@angular/core';
+import type {Group, Rule} from './data.service';
 
 @Pipe({
     name: 'search',
 })
 export class SearchPipe implements PipeTransform {
-
-    transform(groups: any, rawTerms: string): any {
+    transform(groups: Group[], rawTerms: string): Group[] {
         const terms = this.getRegExps(rawTerms);
 
         if (!terms.length) {
@@ -14,7 +14,7 @@ export class SearchPipe implements PipeTransform {
 
         const result = [];
         for (const group of groups) {
-            const groupCopy = {
+            const groupCopy: Group = {
                 title: group.title,
                 rules: [],
             };
@@ -43,7 +43,7 @@ export class SearchPipe implements PipeTransform {
     }
 
     private getRegExps(terms: string): RegExp[] {
-        let splitTerms;
+        let splitTerms: string[];
         if (!terms) {
             splitTerms = [];
         } else {
@@ -58,13 +58,13 @@ export class SearchPipe implements PipeTransform {
         return result;
     }
 
-    private matchRule(terms: RegExp[], o) {
-
+    private matchRule(terms: RegExp[], o: Group | Rule): boolean {
         let match = true;
         for (const term of terms) {
-            let termMatch = o.title.match(term);
-            if (o.content) {
-                termMatch = termMatch || o.content.toString().match(term);
+            let termMatch = !!o.title.match(term);
+            if ('content' in o) {
+                // eslint-disable-next-line @typescript-eslint/no-base-to-string
+                termMatch = termMatch || !!o.content.toString().match(term);
             }
 
             match = match && termMatch;
@@ -72,5 +72,4 @@ export class SearchPipe implements PipeTransform {
 
         return match;
     }
-
 }

@@ -1,27 +1,24 @@
-import { Component } from '@angular/core';
-import { DataService } from './data.service';
+import {Component, inject, ChangeDetectionStrategy} from '@angular/core';
+import {DataService, type Group} from './data.service';
+import {FormsModule} from '@angular/forms';
+import {SearchPipe} from './search.pipe';
 
 @Component({
     selector: 'app-root',
+    imports: [FormsModule, SearchPipe],
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-    title = 'Korean';
-    public data;
+    public readonly data = inject(DataService).data;
     public term = '';
 
-    constructor(dataService: DataService) {
-        this.data = dataService.data;
-    }
-
-    public ruleCount(groups) {
-
+    public ruleCount(groups: Group[]): string {
         let ruleCount = 0;
         for (const group of groups) {
             ruleCount += group.rules.length;
         }
 
-        return ruleCount + ' rules in ' + groups.length + ' groups';
+        return ruleCount.toFixed() + ' rules in ' + groups.length.toFixed() + ' groups';
     }
 }

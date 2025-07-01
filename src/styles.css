@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
-body { background-color: #ebedee; }
-:target { background: lightgreen; }
+body {
+    background-color: #ebedee;
+}
+:target {
+    background: lightgreen;
+}
 h1 {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -16,18 +20,37 @@ text {
     display: inline-block;
     vertical-align: top;
 }
-.column .group { width: 100%; }
+.column .group {
+    width: 100%;
+}
 .group {
     background-color: white;
     border: solid grey 1px;
     border-radius: 8px;
 }
-.rule {border-top: solid lightgrey 1px; }
-.topic { color: orange; stroke: orange; }
-.exception { color: darkred; }
-.exception:before {content: '⚠ '; }
-.comment {color: grey; font-size: 0.8em;}
-.example, .exception { margin-left: 1em; margin-top: 0.5em; margin-bottom: 0.5em; }
+.rule {
+    border-top: solid lightgrey 1px;
+}
+.topic {
+    color: orange;
+    stroke: orange;
+}
+.exception {
+    color: darkred;
+}
+.exception:before {
+    content: '⚠ ';
+}
+.comment {
+    color: grey;
+    font-size: 0.8em;
+}
+.example,
+.exception {
+    margin-left: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
 
 .searchBox {
     margin: 1em;

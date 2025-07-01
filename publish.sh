@@ -2,12 +2,12 @@
 
 set -xe
 
-# Clean
-git rm -rf --ignore-unmatch docs/
-
 # Build
-ng build --prod --base-href /korean/
-cp docs/index.html docs/404.html
+yarn build
+
+# Move build
+git rm -rf --ignore-unmatch docs/
+cp -rv dist/korean/browser docs
 
 # Publish
 git add docs/
