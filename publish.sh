@@ -7,7 +7,7 @@ yarn build
 
 # Move build
 git rm -rf --ignore-unmatch docs/
-cp -rv dist/korean/browser docs
+cp -rv dist/korean/browser/ docs
 
 # Publish
 git add docs/
