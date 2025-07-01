@@ -1,0 +1,55 @@
+계절	Season
+열음	Summer
+추위를 타다	To be sensitive to cold
+겨울	winter
+싫어하다	Don't like
+장마	Monsoon
+춥다	To be cold
+가을	Autumn
+최고	Best / top-rate
+가다	To go
+너무너무	Very much
+아름답다	To be beautiful
+식초	Vinegar
+들르다	To drop by
+생선회	Raw fish
+먹다	To eat
+싱싱하다	To be fresh
+
+펀리하다	Convenient
+불편하다	Inconvenient
+필요하다	Need
+필요없다	Don't need
+강하다	Strong
+약하다	Weak
+친절하다	Kind
+불친절하다	Unkind
+복잡하다	Crowdy / complicate
+심심하다	Bored
+위험하다	Dangerous
+건강하다	Healthy
+행복하다	Happy
+힘들다	Tired / difficult
+유명하다	Famous
+중요하다	Important
+비슷하다	Similar
+이상하다	Weird
+외롭다	Lonely
+무섭다	Scary
+
+맑다	Sunny
+따뜨하다	Warm
+흐리다 / 구릉이 끼다	Cloudy
+덥다	Hot
+일광욕하다	Sun bath
+비가 오다	Raining
+태풍	Typhoon
+천둥	Thunder
+번개가	Lightning
+낙엽이 지다	Falling leaves
+단풍이 들다	Autumn color leaves
+시원하다	Fresh
+서늘하다	Chilly
+바람이 불다	Windy
+눈이 오다	Snowing
+춥다	Cold

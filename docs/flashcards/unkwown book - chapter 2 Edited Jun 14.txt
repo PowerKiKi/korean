@@ -1,0 +1,12 @@
+여보세요	Hello (phone)
+맞는데요	You are right
+바꾸다	Change / swap
+기다리다	Wait
+텔레비전	Television
+보다	To watch
+나오다	To come out
+~종도	About
+~만	Only
+성함	Name (polite)
+실례다	Sorry
+전해 주세요	Transmit (a message/object)
