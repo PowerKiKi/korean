@@ -206,13 +206,6 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/router@^20.0.0":
-  version "20.0.5"
-  resolved "https://registry.yarnpkg.com/@angular/router/-/router-20.0.5.tgz#3caa44b561915168a4840242cc7033975f4b2e04"
-  integrity sha512-GqBxrjov6p6riqDmn+hD2FWk5JSXR638/UhWCZe+XORoOmV/gWgND1HaHPa7f/UvM422yrPEkIsFNMr7bwLmkA==
-  dependencies:
-    tslib "^2.3.0"
-
 "@babel/code-frame@^7.27.1":
   version "7.27.1"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.27.1.tgz#200f715e66d52a23b221a9435534a91cc13ad5be"
