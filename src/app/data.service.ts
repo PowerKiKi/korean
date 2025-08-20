@@ -2,15 +2,15 @@ import {inject, Injectable} from '@angular/core';
 import {DomSanitizer, SafeHtml} from '@angular/platform-browser';
 
 export interface Group {
-    title: string;
-    rules: Rule[];
+    readonly title: string;
+    readonly rules: Rule[];
 }
 
 export interface Rule {
-    title: string;
-    id?: string;
-    tags: string[];
-    content: string | SafeHtml;
+    readonly title: string;
+    readonly id?: string;
+    readonly tags: readonly string[];
+    readonly content: string | SafeHtml;
 }
 
 @Injectable({providedIn: 'root'})
