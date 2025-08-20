@@ -3,8 +3,18 @@
 body {
     background-color: #ebedee;
 }
+
+@keyframes highlight {
+    0% {
+        background: lightskyblue;
+    }
+    100% {
+        background: none;
+    }
+}
+
 :target {
-    background: lightgreen;
+    animation: highlight 2s ease-in-out;
 }
 h1 {
     margin-top: 0.5em;
@@ -63,12 +73,15 @@ text {
 }
 
 .tags {
-    margin: 1em;
+    padding: 0.5em;
+    line-height: 1.5em;
 }
 .tag {
-    color: lightgrey;
+    color: grey;
     font-size: 0.8em;
     border: 1px solid lightgrey;
     border-radius: 4px;
     padding: 0.2em 0.5em;
+    margin-right: 0.5em;
+    white-space: nowrap;
 }

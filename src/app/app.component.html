@@ -10,11 +10,11 @@
             <section class="rule" [id]="rule.id">
                 <h1>{{ rule.title }}</h1>
                 <div [innerHTML]="rule.content"></div>
-                @for (tag of rule.tags; track tag) {
-                    <div class="tags">
-                        <span class="tag">{{ tag }}</span>
-                    </div>
-                }
+                <div class="tags">
+                    @for (tag of rule.tags; track tag) {
+                        <span class="tag">{{ tag }}</span>&ngsp;
+                    }
+                </div>
             </section>
         }
     </section>
