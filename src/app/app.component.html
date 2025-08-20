@@ -7,7 +7,7 @@
     <section class="group">
         <h1>{{ group.title }}</h1>
         @for (rule of group.rules; track rule) {
-            <section class="rule">
+            <section class="rule" [id]="rule.id">
                 <h1>{{ rule.title }}</h1>
                 <div [innerHTML]="rule.content"></div>
                 @for (tag of rule.tags; track tag) {

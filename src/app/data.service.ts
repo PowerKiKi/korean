@@ -8,6 +8,7 @@ export interface Group {
 
 export interface Rule {
     title: string;
+    id?: string;
     tags: string[];
     content: string | SafeHtml;
 }
@@ -775,6 +776,7 @@ export class DataService {
                 rules: [
                     {
                         title: `Rule 1`,
+                        id: `exceptionRule1`,
                         tags: [`Easy Korean 4`],
                         content: `<p class="topic">ㄷ ⇨ ㄹ</p>
                         <p class="example">듣다 ⇨ 들…</p>
@@ -791,6 +793,7 @@ export class DataService {
                     },
                     {
                         title: `Rule 2`,
+                        id: `exceptionRule2`,
                         tags: [`Easy Korean 4`],
                         content: `<p>Same as <a href="#exceptionRule1">exception rule 1</a>, and:</p>
 
@@ -799,6 +802,7 @@ export class DataService {
                     },
                     {
                         title: `Rule 3`,
+                        id: `exceptionRule3`,
                         tags: [`Easy Korean 4`],
                         content: `<p>Same as <a href="#exceptionRule1">exception rule 1</a>, and:</p>
                         <p class="topic">ㄹ ⇨ ㄹ, but use as if vowel, not consonant</p>
@@ -806,6 +810,7 @@ export class DataService {
                     },
                     {
                         title: `Polite verbs`,
+                        id: `exceptionRule4`,
                         tags: [`Easy Korean 4`],
                         content: `<p class="topic">먹다 ⇨ 드시다 / 잡수시다</p>
                         <p class="topic">마시다 ⇨ 드시다 / 잡수시다</p>
