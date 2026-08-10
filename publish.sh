@@ -3,7 +3,7 @@
 set -xe
 
 # Build
-yarn build
+pnpm run build
 
 # Move build
 git rm -rf --ignore-unmatch docs/
