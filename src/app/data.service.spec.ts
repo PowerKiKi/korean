@@ -15,6 +15,6 @@ describe('Service: Data', () => {
 
     it('should have some data', () => {
         expect(service).toBeTruthy();
-        expect(Array.isArray(service.data)).toBeTrue();
+        expect(Array.isArray(service.data)).toBe(true);
     });
 });

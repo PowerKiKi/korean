@@ -1,6 +1,6 @@
 import {TestBed} from '@angular/core/testing';
 import {SearchPipe} from './search.pipe';
-import {DataService} from '../app/data.service';
+import {DataService} from './data.service';
 import {provideZonelessChangeDetection} from '@angular/core';
 
 describe('Search Pipe', () => {

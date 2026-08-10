@@ -1,4 +1,4 @@
-import {Component, inject, ChangeDetectionStrategy} from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {DataService, type Group} from './data.service';
 import {FormsModule} from '@angular/forms';
 import {SearchPipe} from './search.pipe';
@@ -7,7 +7,6 @@ import {SearchPipe} from './search.pipe';
     selector: 'app-root',
     imports: [FormsModule, SearchPipe],
     templateUrl: './app.component.html',
-    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
     protected readonly data = inject(DataService).data;
