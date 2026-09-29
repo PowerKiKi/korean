@@ -12,7 +12,8 @@
                 <div [innerHTML]="rule.content"></div>
                 <div class="tags">
                     @for (tag of rule.tags; track tag) {
-                        <span class="tag">{{ tag }}</span>&ngsp;
+                        <span class="tag">{{ tag }}</span
+                        >&ngsp;
                     }
                 </div>
             </section>
