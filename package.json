@@ -10,6 +10,7 @@
         "test": "ng test",
         "lint": "ng lint"
     },
+    "packageManager": "pnpm@12.6.0",
     "prettier": {
         "tabWidth": 4,
         "singleQuote": true,
